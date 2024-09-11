@@ -1,0 +1,67 @@
+html {
+  background-color: antiquewhite
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.display {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.keypad {
+  display: grid;
+  width: 200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  
+}
+
+.keypad button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: .6em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;  
+}
+
+.keypad button:hover {
+  border-color: #f55d5d;
+}
+
+.keypad .clearMemory {
+  background-color: #f55d5d;
+}
+
+.keypad .clearDisplay {
+  background-color: #f7d3a1;
+}
+
+.keypad .equals {
+  grid-column: auto /span 4;
+  background-color: #c5f192;
+}
+
+.calculator .main-heading {
+  font-family:cursive;
+  font-size: 2em;
+  margin: 0.25em;
+}
+
+p {
+  font-family: cursive;
+  font-size: 1em;
+  margin: 0.5em;
+}
